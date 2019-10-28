@@ -1,0 +1,39 @@
+a{
+    text-decoration: none;
+}
+
+/*nav bar*/
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#navlinks{
+    width: 40%;
+    display: flex;
+}
+
+#sociallinks{
+    width: 40%;
+    display: flex;
+}
+/*nav bar*/
+
+/*index*/
+/*aboutme*/
+#aboutme{
+
+}
+#aboutme img{
+    float: left;
+}
+/*aboutme*/
+/*minigallery*/
+#featuredprojects{
+    width: 80%;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+}
+/*minigallery*/
+/*index*/
