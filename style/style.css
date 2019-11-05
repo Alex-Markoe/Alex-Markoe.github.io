@@ -1,24 +1,59 @@
 a{
     text-decoration: none;
+    color: black;
+}
+
+body{
+    margin: 0;
 }
 
 /*nav bar*/
 nav{
+    background: grey;
     width: 100%;
+    height: 60px;
     display: flex;
     justify-content: space-evenly;
 }
+nav h1{
+    text-align: center;
+    align-self: center;
+}
 .nav{
     list-style-type: none;
+    align-self: center;
 }
 .nav a{
     display: block;
-    width: 25%;
+    width: 100%;
 }
+
 #navlinks{
     width: 40%;
+    height: 100%;
     display: flex;
 }
+#navlinks a{
+    height: 100%;
+}
+#navlinks a:link{
+    background: none;
+}
+#navlinks a:hover{
+    background: lightblue;
+}
+#navlinks a:focus{
+    background: none;
+}
+#navlinks a:active{
+    background: none;
+}
+#navlinks li{
+    width: 25%;
+    margin-right: 1rem;
+    text-align: center;
+}
+
 #sociallinks{
     width: 40%;
     display: flex;
@@ -28,7 +63,7 @@ nav{
 /*index*/
 /*aboutme*/
 #aboutme{
-    width: 80vw;
+    width: 40vw;
     margin-left: auto;
     margin-right: auto;
 }
@@ -37,30 +72,44 @@ nav{
 }
 /*aboutme*/
 /*minigallery*/
+h2{
+    text-align: center;
+    clear: both;
+}
 #featuredprojects{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    display: grid;
     grid-template-columns: 2fr 2fr;
     grid-template-rows: 2fr 2fr;
+    grid-row-gap: 3rem;
     grid-template-areas: 
-        "1 2"
-        "3 4";
+        "proj1 proj2"
+        "proj3 proj4";
 }
 #proj1{
-    grid-area: 1;
+    grid-area: proj1;
 }
 #proj2{
-    grid-area: 2;
+    grid-area: proj2;
 }
 #proj3{
-    grid-area: 3;
+    grid-area: proj3;
 }
 #proj4{
-    grid-area: 4;
+    grid-area: proj4;
 }
 .projectdisplay{
-
+    width: 60%;
+    justify-self: center;
+    background: grey;
+}
+.projectdisplay img{
+    max-width: 100%;
+}
+.projectdisplay h3{
+    text-align: center;
 }
 /*minigallery*/
 /*index*/
