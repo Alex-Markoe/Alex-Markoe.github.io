@@ -8,12 +8,17 @@ nav{
     display: flex;
     justify-content: space-evenly;
 }
-
+.nav{
+    list-style-type: none;
+}
+.nav a{
+    display: block;
+    width: 25%;
+}
 #navlinks{
     width: 40%;
     display: flex;
 }
-
 #sociallinks{
     width: 40%;
     display: flex;
@@ -23,7 +28,9 @@ nav{
 /*index*/
 /*aboutme*/
 #aboutme{
-
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 #aboutme img{
     float: left;
@@ -32,8 +39,28 @@ nav{
 /*minigallery*/
 #featuredprojects{
     width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     grid-template-columns: 2fr 2fr;
     grid-template-rows: 2fr 2fr;
+    grid-template-areas: 
+        "1 2"
+        "3 4";
+}
+#proj1{
+    grid-area: 1;
+}
+#proj2{
+    grid-area: 2;
+}
+#proj3{
+    grid-area: 3;
+}
+#proj4{
+    grid-area: 4;
+}
+.projectdisplay{
+
 }
 /*minigallery*/
 /*index*/
