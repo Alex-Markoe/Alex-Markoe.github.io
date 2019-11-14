@@ -1,3 +1,8 @@
+*{
+    color: #4f4f4f;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -39,13 +44,20 @@ nav h1{
     background: none;
 }
 #navlinks a:hover{
-    background: lightblue;
+    animation-name: navHover;
+    animation-duration: .75s;
+    background: #dbdbdb;
 }
 #navlinks a:focus{
     background: none;
 }
 #navlinks a:active{
     background: none;
+}
+
+@keyframes navHover{
+    from {background: none;}
+    to {background: #dbdbdb}
 }
 /*nav bar*/
 
@@ -104,12 +116,18 @@ h2{
     width: 60%;
     justify-self: center;
     border-radius: 15px;
-    background: grey;
+    background: #dbdbdb;
 }
 .projectdisplay img{
-    max-width: 100%;
+    width: 100%;
     height: 250px;
     border-radius: 15px 15px 0 0;
+    filter: none;
+}
+.projectdisplay img:hover{
+    animation-name: indexIMGHover;
+    animation-duration: 1s;
+    filter: opacity(30%);
 }
 .projectdisplay h3{
     width: 80%;
@@ -119,7 +137,31 @@ h2{
     border-bottom: 1px solid black;
 }
 .projectdisplay p{
-    padding: 1rem;
+    padding: 2rem;
+}
+
+@keyframes indexIMGHover{
+    from {filter: none;}
+    to {filter: opacity(30%);}
 }
 /*minigallery*/
 /*index*/
+
+
+/*gallery*/
+.gallerydisplay{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.gallerydisplay img{
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+.gallerydisplay h2{
+    width: 200px;
+}
+/*gallery*/
