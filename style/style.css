@@ -30,8 +30,6 @@ nav h1{
     display: flex;
 }
 
-#navlinks{
-}
 #navlinks li{
     width: 33%;
     text-align: center;
@@ -56,9 +54,6 @@ nav h1{
     background: none;
 }
 
-#sociallinks{
-    width: 25%;
-}
 #sociallinks li{
     margin-right: 15px;
 }
@@ -195,8 +190,6 @@ h2{
     margin-right: auto;
     border-radius: 10px;
 }
-.gallerydisplay h2{
-}
 .displayheader{
     font-weight: bold;
     font-size: 2rem;
@@ -278,33 +271,47 @@ h2{
 
 nav{
     flex-direction: column;
+    align-items: stretch;
 }
 .nav{
+    width: 100%;
     margin: 0;
     padding: 0;
 }
 #navlinks{
     margin-bottom: 25px;
 }
-#sociallinks li{
-    margin: 0;
+#sociallinks{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
 }
 
 /*index*/
+#aboutme{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#aboutme p{
+    padding: 0;
+}
 #featuredprojects{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .projectdisplay{
-    width: 80%;
+    width: 100%;
     margin-bottom: 50px;
 }
 /*index*/
 
 /*gallery*/
-.gallerydisplay{
+#gallery, .gallerydisplay{
     width: 100%;
 }
 /*gallery*/
@@ -312,6 +319,9 @@ nav{
 /*resume*/
 #awards, #resume dl{
     width: 80%;
+}
+#resume h2{
+    width: 250px;
 }
 /*resume*/
 }
