@@ -1,0 +1,67 @@
+#resume{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+}
+#resume h1, p, #resume h2{
+    text-align: center;
+}
+#resume h3{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+#resume h2{
+    border-bottom: 1px solid black;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+}
+#resume dl, ul{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#resume dt{
+    float: left;
+    margin-right: 10px;
+}
+#resume dl{
+    width: 40%;
+}
+.date{
+    text-align: left;
+}
+
+#resume a{
+    display: block;
+    background: grey;
+    border-radius: 30px;
+    width: 100px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    text-align: center;
+}
+#resume a:link{
+    animation-name: playableLink;
+    animation-duration: .4s;
+}
+#resume a:hover{
+    background: #bdbdbd;
+    box-shadow: 0px 8px black;
+    animation-name: playableHover;
+    animation-duration: .5s;
+}
+
+/*scaling*/
+@media only screen and (max-width: 650px){
+    #awards, #resume dl{
+        width: 80%;
+    }
+    #resume h2{
+        width: 250px;
+    }
+}
